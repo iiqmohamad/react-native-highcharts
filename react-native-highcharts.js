@@ -13,6 +13,8 @@ const win = Dimensions.get('window');
 class ChartWeb extends Component {
     constructor(props){
         super(props);
+        
+        this.reRenderWebView = this.reRenderWebView.bind(this)
 
         this.state={
             init:`<html>
